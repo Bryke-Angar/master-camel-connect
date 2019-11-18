@@ -2,9 +2,9 @@ describe("#FactService", function() {
   var FactService = require('../.././source/factService.js');
   console.log("TESTING **factService**", FactService);
 
-  it("should return a fact about camels", fuction() {
+  it("should return a fact about camels", function() {
     var fact = FactService.getCamelFact();
-    console.log("FACT from factService.js -> ", fact);
+    console.log("FACT fromfactService.js -> ", fact);
     //Expect a camel fact to return from the fact service.
     expect(fact["camel-fact"]).toContain("Camels");
   });
